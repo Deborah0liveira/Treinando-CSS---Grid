@@ -1,0 +1,72 @@
+.pets__titulo{
+    padding: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+
+.container__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    grid-gap: 5px;
+    justify-content:center;
+}
+
+.nome-do-pet{
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.descricao-pet{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.pet__img{
+    padding: .5rem;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.btn{
+    width: 50%;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    background-color: #bdf8d273;  
+}
+
+.titulo-inferior{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    .container__grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
